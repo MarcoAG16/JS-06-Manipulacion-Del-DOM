@@ -1,0 +1,38 @@
+/*Estilos generales */
+body{
+    text-align: center;
+    background-image: url(https://img.freepik.com/premium-photo/dental-tools-blue-background-top-view_219766-1996.jpg?w=2000);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Estilos para mi imagen */
+img{
+    max-width: 100%;
+    height: auto;
+}
+#titulo{
+    background-color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.formulario{
+    
+   margin-top: 20%;
+}
+
+#imagedentista{
+    margin-top: 5%;
+}
+#nombrep{
+    margin: 3%;
+    font-weight: bold;
+}
+.border.border-info-subtle.rounded-4.border.border-3{
+    padding: 2%;
+    background-color: aliceblue;
+    
+
+}
+    
+

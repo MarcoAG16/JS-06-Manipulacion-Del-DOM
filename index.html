@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario registro de pacientes</title>
+    <!-- Estilos de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">"
+    <!-- Hoja de estilos local -->
+    <link rel="stylesheet" href="./assets/style/style.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- Trabajaremos con el grid para que nuetra pagina sea responsiva -->
+
+    <!-- Container padre -->
+    <div class="container " id="containerPadre">
+        <h1 id="titulo" class="tituloprincipal border border-primary border border-5 rounded-bottom">Formulario de registro de Pacientes</h1>
+
+        <!-- Div para crear mi fila -->
+        <div class="row" id="filaUno">
+
+            <!-- Div para mi columna 1/2 -->
+            <div id="imagedentista" class="col col-sm-12 col-md-12 col-lg-6">
+                <img class="imagenprincipal border border-info-subtle border border-5 rounded" src="./assets/img/Image20230913102814.jpg" alt="imagen de un consultorio">
+
+            </div><!--Aqui termina mi columna 1-->
+
+
+            <!-- Div para mi column 2/2 -->
+            <div class="col col-sm-12 col-md-12 col-lg-6">
+                <form class="formulario">
+
+                    <div class="form-group">
+                        <div id="nombrep">
+                            <span class="bborder border-info-subtle rounded-4 border border-3">Nombre del Paciente</span>
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" id="nombrePaciente"
+                                placeholder="Introduzca el nombre del paciente">
+                        </div>
+                    </div>
+
+
+                    <br>
+
+                    <div  class="form-group">
+                        <div id="nombrep">
+                        
+                        <span class="border border-info-subtle rounded-4 border border-3">Edad del Paciente</span>
+                        </div>
+                        <input type="number" class="form-control" id="edadPaciente"
+                            placeholder="Introduzca la edad del paciente" min="0" max="100">
+                    </div>
+
+                    <br>
+                    <button type="button" class="btn btn-primary" id="btnRegistrarPaciente">Registrar Paciente</button>
+                </form>
+
+            </div><!--Aqui termina mi columna 2-->
+        </div><!--Aqui cierra mi fila-->
+    </div> <!--Aqui termina el container padre-->
+
+    <!-- contenedor para mostrar el mensae de "Paciente registrado correctamente" -->
+    <div class="container" id="mensajeConfirmacion">
+
+    </div>
+
+    <!-- Contenedor para mostrar las tarjetas del paciente -->
+    <div class="container">
+        <div class="row" id="contenedorTarjetas">
+
+
+        </div><!--cierra de la fila-->
+    </div><!--cierre del contenedor-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Scripts de bootsrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"></script>
+
+    <!-- Agregamos nuestro script local -->
+    <script src="./assets/scripts/sistemaDeRegistro.js"></script>
+
+
+</body>
+
+</html>
